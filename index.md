@@ -1,37 +1,32 @@
-## Welcome to GitHub Pages
+# Personal
+- Born 1977-05-22
+- NZ and UK Citizen
+- Lives in Auckland, New Zealand with family
+- [&#114;&#105;&#99;&#104;&#97;&#114;&#100;&#64;&#119;&#97;&#114;&#98;&#117;&#114;&#116;&#111;&#110;&#46;&#105;&#116;](&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#114;&#105;&#99;&#104;&#97;&#114;&#100;&#64;&#119;&#97;&#114;&#98;&#117;&#114;&#116;&#111;&#110;&#46;&#105;&#116;)  
+- [+64 2 176 5837](tel:+6421765837)
+- Non-alcoholic non-smoker
+- Loves dark chocolate (esp. with nuts)
+- Can Ice/Inline Skate
 
-You can use the [editor on GitHub](https://github.com/krolaw/cv/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+# Qualifications ([more](education.md))
+- Computer Science Masters, with First Class Honours (MSc) - University of Auckland
+- Bachelor of Engineering, with Honours (BE) - University of Auckland
+- Bursary (A), Sixth Form Certificate (A), School Certificate (A) - Long Bay College
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Experience ([more](work.md))
 
-### Markdown
+## 2019 - Present : Chief Technical Officer / Architect / Developer - [Extraorder Limited](https://extraorder.app)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+## 2007 - 2019 : Senior Developer/Support - [Nui Software](http://nui.global)
+- Installation and Management of all Linux and OS X Servers</li>
+- Creator and Maintainer of [key solutions](skills.mh#skagerrak) in major products, leveraging multiple technologies and programming languages
 
-# Header 1
-## Header 2
-### Header 3
+## 2001 - 2010 : Primary School (K12)  I.T. Administrator - [Prototec Limited](http://www.prototec.co.nz)
+- Purchase and Strategic Advice
+- Systems/Network Setup
+- Training
+- Troubleshooting
+- Custom Web Development
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/krolaw/cv/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.

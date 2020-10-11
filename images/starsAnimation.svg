@@ -1,0 +1,65 @@
+<svg width="100%" height="100%" viewBox="0 200 266 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> 
+<title>Stars of the Week V1.12</title><desc>Copyright: http://www.prototec.co.nz</desc> 
+<rect x="-266" y="0" width="800" height="600" fill="black" /> 
+<g id="stars"></g> 
+<g style='text-anchor: middle;' fill="yellow" font-family="sans-serif" font-size="18" stroke="white" stroke-width=".3"> 
+<text x="133" y="218">Generic School's</text> 
+<text x="133" y="236">Stars of the Week</text> 
+<text x="133" y="241" font-size="5" fill="white" stroke="none" >2009-11-08 &lt;-&gt; 2009-11-14</text> 
+ 
+<g font-size="17"> 
+<text x="133" y="272.375">Blaine</text> 
+<text x="133" y="309.125">Shanice</text> 
+<text x="133" y="345.875">Lorelle</text> 
+<text x="133" y="382.625">Tamkeen</text> 
+</g> 
+<g font-size="5" fill="white" stroke="none"> 
+<text x="133" y="277.375">Reading 100 books in the Hundreds Club *  * </text> 
+<text x="133" y="314.125">great creative writing * 10  * Mrs Molloy</text> 
+<text x="133" y="350.875">fantastic writing for a New Entrant * 8a * Mrs Murgatroyd</text> 
+<text x="133" y="387.625">for being passionate about saving the Orangutans * 18 * Mrs Gass</text> 
+</g> 
+<a xlink:href="http://www.prototec.co.nz" target="_top"><text id="p" style="text-anchor: end" x="266" y="398" font-size="4" fill="white" stroke="none" onmouseover="document.getElementById('p').setAttributeNS(null,'fill','yellow');"
+onmouseout="document.getElementById('p').setAttributeNS(null,'fill','white');"
+>www.prototec.co.nz</text></a> 
+</g> 
+ 
+<script type="text/ecmascript"><![CDATA[
+var stars=new Array(25),r1=10,r2=25,fps=10;
+ 
+for(x=0;x<stars.length;x++) stars[x] = new star(); timer();
+function point(r,ang) { return (r*Math.cos(ang*2*Math.PI))+" "+(r*Math.sin(ang*2*Math.PI)); }
+function timer() { for(x=0;x<stars.length;x++) stars[x].move(); setTimeout("timer()",1000/fps); }
+ 
+function star() {
+	this.svgElement=document.createElementNS("http://www.w3.org/2000/svg","path");
+	this.svgElement.setAttributeNS(null,"d",'M'+point(r2,0)+'L'+point(r1,.1)+'L'+point(r2,.2)+'L'+point(r1,.3)+
+		'L'+point(r2,.4)+'L'+point(r1,.5)+'L'+point(r2,.6)+'L'+point(r1,.7)+'L'+point(r2,.8)+'L'+point(r1,.9));
+	this.regenerate=starRegenerate;
+	this.move=starMove;
+	this.regenerate();
+	document.getElementById("stars").appendChild(this.svgElement);
+}
+ 
+function starRegenerate() {
+	this.speedSize=Math.random()/10+0.05;
+	this.speedRotation=20*Math.random()-10
+	this.currentRotation=0;
+	this.currentSize=0;
+	this.x=Math.floor(Math.random()*200)+33;
+	this.y=Math.floor(Math.random()*200)+200;
+	this.svgElement.setAttributeNS(null,"fill","rgb("+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+","+Math.floor(Math.random()*256)+")");
+}
+ 
+function starMove() {
+	this.currentRotation+=this.speedRotation;
+	this.currentSize+=this.speedSize;
+	if(this.currentSize<0) this.regenerate();
+	else if(this.currentSize>1) {
+		this.currentSize=2-this.currentSize;
+		this.speedSize=-this.speedSize;
+	}
+	this.svgElement.setAttributeNS(null,"transform","translate("+this.x+","+this.y+") scale("+this.currentSize+") rotate("+this.currentRotation+")");
+}
+]]></script> 
+</svg> 
