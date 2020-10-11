@@ -1,11 +1,13 @@
 # University of Auckland - Qualifications & Papers
 
 ## Master of Computer Science - Honours 1st Class
+
 |Year|Paper|Paper Title|Pts|Grade|
 |----|-----|-----------|---|-----|
 |2001|796|Thesis|14|A-| 
 
 ## Post Graduate Diploma of Computer Science
+
 |Year|Paper|Paper Title|Pts|Grade|
 |----|-----|-----------|---|-----|
 |2000|415.708FC|Multimedia & Hypermedia Systems|2|A+| 
@@ -17,6 +19,7 @@
 ||415.735FC|Object Oriented Systems|2|C+| 
 
 ## Bachelor of Engineering Science - Honours 2nd Class, 2nd Division
+
 |Year|Paper|Paper Title|Pts|Grade|
 |----|-----|-----------|---|-----|
 |1999|415.370SC|Graphics & Graphical User Interfaces|2|A| 
@@ -56,6 +59,7 @@
 # Long Bay College
 
 ## 1995 - Bursary
+
 |Subject|Grade|
 |-------|-----|
 |Mathematics with Statistics|A 86% Scholarship| 
@@ -67,6 +71,7 @@
 
 
 ## 1994 - Sixth Form Certificate
+
 |Subject|Grade|
 |-------|-----|
 |Computer Studies|1 Excellence Certificate| 
@@ -77,8 +82,8 @@
 |Accounting|4| 
 *Extra Curricular:* Young Enterprises Scheme, Debating| 
 
-
 ## 1993 - School Certificate
+
 |Subject|Grade|
 |-------|-----|
 |English|A 86% Excellence Certificate| 

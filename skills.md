@@ -1,4 +1,5 @@
 # Current Technologies
+
 |Arena|List|
 |---|---|
 |Languages|Go, Dart, Javascript|
@@ -8,6 +9,7 @@
 |OSes|Ubuntu/Linux, Android, iOS|
 
 # Past Technologies
+
 |Arena|List|
 |---|---|
 |Languages|PHP, Lua, Rust, Javascript, C, Java/Groovy, XSLT/XML|
