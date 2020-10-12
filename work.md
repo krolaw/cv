@@ -7,11 +7,16 @@ title: Work History
 
 ## Restaurant Ordering App
 
+- [Google Play Link](https://play.google.com/store/apps/details?id=app.extraorder.extraorder_app)
+- [AppStore Link](https://apps.apple.com/nz/app/extraorder/id1482743097)
+
 Customer iOS, Android and Web App all leveraged the same Flutter codebase. The Vendor admin web frontend utilised [AngularDart](https://angulardart.dev/) so a significant portion of the Flutter source could be reused. The backend was written in Go, hosted on Google's AppEngine Standard platform with Datastore (config/menus) and CloudStorage (images). Stripe for payments, Mailgun for emails and custom code to integrate with various POS systems. I also setup the dns hosting, mail forwarding, SIP phones etc. I was instrumental in creating the logo with some direction from the CEO. 
 
 ## Website
 
-The initial Extraorder website used [Hugo](https://gohugo.io/), with the [Meghna theme](https://themes.gohugo.io/meghna-hugo/), hosted on Github. Alas, I couldn't do it all, so it was replaced by [WordPress](https://wordpress.com/) so a real designer could manage the website. My initial efforts [can still be viewed](https://krolaw.github.io/eowebsite/) (without the Extraorder domain).
+- [Original Site](https://krolaw.github.io/eowebsite/)
+
+The initial Extraorder website used [Hugo](https://gohugo.io/), with the [Meghna theme](https://themes.gohugo.io/meghna-hugo/), hosted on Github. Alas, I couldn't do it all, so it was replaced by [WordPress](https://wordpress.com/) so a real designer could manage the website. My initial efforts can still be viewed (without the Extraorder domain).
 
 # _Senior Developer / Dev Mentor / Software Architect_
 # 2007 - 2019 : Skagerrak Software Limited trading as [Nui Software](https://nui.global)

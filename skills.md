@@ -46,6 +46,11 @@ Developed for New Zealand schools to match NZ maths standard tests.
 Free Android puzzle game, similar to Set.  Downloadable from Google Android Market.
 
 ## XSLT Charts
+
+<object alt="Charts Screenshot" type="image/svg+xml" src="images/icecream.svg"></object>
+
+<img alt="Charts Screenshot" src="images/icecream.svg" />
+
 ![Charts Screenshot](images/icecream.svg)
 ![Charts Screenshot](images/sunspots.svg)  
 

@@ -13,14 +13,15 @@ title: Home
 - Can Ice/Inline Skate
 
 # Qualifications ([more](education.md))
-- Computer Science Masters, with First Class Honours (MSc) - University of Auckland
-- Bachelor of Engineering, with Honours (BE) - University of Auckland
-- Bursary (A), Sixth Form Certificate (A), School Certificate (A) - Long Bay College
+
+- University of Auckland
+    - Computer Science Masters, with First Class Honours (MSc)
+    - Bachelor of Engineering, with Honours (BE)
+
 
 # Experience ([more](work.md))
 
 ## 2019 - Present : Chief Technical Officer / Architect / Developer - [Extraorder Limited](https://extraorder.app)
-
 
 ## 2007 - 2019 : Senior Developer/Support - [Nui Software](http://nui.global)
 - Installation and Management of all Linux and OS X Servers</li>
