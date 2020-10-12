@@ -134,4 +134,4 @@ I was given a book on HTML 2.0 and asked to build a website. The user base was p
 # _Computer Tutor_
 # 1995 - 1997 Mac, 1993 - 1995 Amiga
 
-During High School, I had an Commodore Amiga 500. I learnt various software packages and tutored them. Later when I upgraded to an Apple Mac LC475, I switched over to tutoring that.
+During High School, I had an Commodore Amiga 500. I learnt various software packages and tutored them (I also wrote programmes in [Amiga Basic](https://en.wikipedia.org/wiki/AmigaBASIC) and [Lattice C](https://en.wikipedia.org/wiki/Lattice_C)). Later when I upgraded to an Apple Mac LC475, I switched over to tutoring that.

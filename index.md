@@ -15,19 +15,23 @@ title: Home
 # Qualifications ([more](education.md))
 
 - University of Auckland
-    - Computer Science Masters, with First Class Honours (MSc)
-    - Bachelor of Engineering, with Honours (BE)
+    - Computer Science Masters with First Class Honours (MSc)
+    - Bachelor of Engineering with Honours (BE)
 
 
 # Experience ([more](work.md))
 
-## 2019 - Present : Chief Technical Officer / Architect / Developer - [Extraorder Limited](https://extraorder.app)
+## 2019 - Present : CTO / Architect / Developer - [Extraorder Limited](https://extraorder.app)
+- Management / Setup / Development of Cloud Systems
+- Development of Mobile Ordering App and Web Admin System
+- Integration with POS systems / Payment gateway
+- Development of Original Website
 
-## 2007 - 2019 : Senior Developer/Support - [Nui Software](http://nui.global)
-- Installation and Management of all Linux and OS X Servers</li>
-- Creator and Maintainer of [key solutions](skills.mh#skagerrak) in major products, leveraging multiple technologies and programming languages
+## 2007 - 2019 : Developer / Architect / Mentor - [Nui Software](http://nui.global)
+- Installation and Management of all Linux and OS X Servers
+- Creator and Maintainer of key solutions in major products, leveraging multiple technologies and programming languages
 
-## 2001 - 2010 : Primary School (K12)  I.T. Administrator - [Prototec Limited](http://www.prototec.co.nz)
+## 2001 - 2010 : Primary School (K12)  I.T. Admin - [Prototec Limited](http://www.prototec.co.nz)
 - Purchase and Strategic Advice
 - Systems/Network Setup
 - Training

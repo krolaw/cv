@@ -46,21 +46,17 @@ Developed for New Zealand schools to match NZ maths standard tests.
 Free Android puzzle game, similar to Set.  Downloadable from Google Android Market.
 
 ## XSLT Charts
+*XML/XSLT, SVG*
 
-<object alt="Charts Screenshot" type="image/svg+xml" src="images/icecream.svg"></object>
-
-<img alt="Charts Screenshot" src="images/icecream.svg" />
-
-![Charts Screenshot](images/icecream.svg)
-![Charts Screenshot](images/sunspots.svg)  
-
-https://github.com/krolaw/charts *XML/XSLT, SVG*  
+- [Icecream Example](images/icecream.svg)
+- [Sunspots Example](images/sunspots.svg)
+  
 XML to Pie/Bar/Line chart converter.
 
 ## Free Subliminal Text
 http://github.com/krolaw/fst *Java*  
-![Free Subliminal Text Example](../fst/screenshots.png)  
-Multiplatform programme that flashes subliminal messages on screen. Created when my wife's subliminal software failed, and later turned into a fully releasable product.
+![Free Subliminal Text Example](https://raw.githubusercontent.com/krolaw/fst/master/screenshot1.png)  
+Multiplatform programme that flashes subliminal messages on screen. Created when my wife's subliminal software failed, and later turned into something releasable.
 
 ## Hearts
 ![Hearts Example](../hearts/hearts.svg) *PHP, HTML, JavaScript, SVG*  
@@ -70,10 +66,7 @@ Hearts started with an interest in SVG and the imminent arrival of Valentine's d
 ![SipCloak Logo](http://www.sipcloak.org/logo.png) *Go*  
 Free, no registration, DNS controlled, SIP Redirection service. Sadly, no longer used as redirection isn't the best way to mask a SIP address.
 
-
-
 # [Nui Software](https://nui.global) 
-
 
 ## MenuMate Enabler
 *Groovy/ScriptMaster*   
@@ -98,22 +91,4 @@ URI to Pie/Bar/Line chart converter. Was used in all major Skagerrak products be
 **Original:** *Groovy/ScriptMaster, PHP, Apache*  
 **Cloud:** *Groovy/ScriptMaster, Go, CloudStorage*  
 Addon offsite backup system for MotelMate product.
-
-## WebEdit
-*AJAX, Javascript, HTML/DOM, PHP, MySQL, XML*  
-![WebEdit Screenshot](images/webedit.png)  
-An online, multilayer, drag and drop, web editor, aimed at school staff.
-
-## Simple School Admin
-*HTML, PHP, MySQL* 
-
-![Booking Screenshot](images/booking.png) ![Daysheet Screenshot](images/daysheet.png)  
- 
-A simple set of specially designed pages to assist operations.  Daysheet, bookings, problem logging, edit links and so forth.
-
-## Stars of the Week
-*Javascript, MySQL, PHP, SVG*  
-![Stars Control Interface](images/starsEdit.png)  
-![Stars Display](images/starsAnimation.svg)  
-Rotating stars put to good use.
 
