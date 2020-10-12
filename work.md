@@ -138,7 +138,7 @@ I also advised on technology purchases, trained staff, made presentations, etc.
 
 ## Prototec Learning
 
-https://learning.prototec.co.nz/
+[Website](https://learning.prototec.co.nz/)
 
 Developed for New Zealand schools to match NZ maths curriculum. Originally, I would charge a licence fee and allow schools to host it on their websites for students to practise at home.
 
@@ -185,6 +185,7 @@ During High School, I had an Commodore Amiga 500. I learnt various software pack
 ![TriXOR Screenshots](images/trixor.png)
 
 *Android Java, XML, SQLite3* 
+
 Free Android puzzle game, similar to Set.  Downloadable from Google Android Market.
 
 ## XSLT Charts (2013)
@@ -196,11 +197,12 @@ Free Android puzzle game, similar to Set.  Downloadable from Google Android Mark
 XML to Pie/Bar/Line chart converter. Unfortunately, at some stage browsers stopped supporting the embedding of images into HMTL that were created using XSLT. Oddly they can still be viewed directly (links above).
 
 ## Free Subliminal Text (2011)
-http://github.com/krolaw/fst *Java*  
+[GitHub](http://github.com/krolaw/fst) *Java*  
 ![Free Subliminal Text Example](https://raw.githubusercontent.com/krolaw/fst/master/screenshot1.png)  
 Multiplatform programme that flashes subliminal messages on screen. Created when my wife's subliminal software failed, and later turned into something releasable.
 
 ## Hearts (2005)
-![Hearts Example](images/hearts.svg) 
+[Hearts Example](images/hearts.svg) 
+
 *PHP, HTML, JavaScript, SVG*  
 Hearts started with an interest in SVG and the imminent arrival of Valentine's day.  My wife blogged about it, which resulted in requests from SVG proponents to create a configurable version for general use.  A Canvas option was later added to support Android and iPhone devices.
