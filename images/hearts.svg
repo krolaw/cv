@@ -1,0 +1,115 @@
+
+<svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	font-size="10" font-family="sans-serif" text-anchor="middle" fill="#fff" onload="start()">
+<title id="title">Animated Hearts</title><desc>Make your own hearts at http://richard.warburton.it/hearts</desc>
+<g id="canvas" />
+<script type="text/ecmascript"><![CDATA[
+	var messages = [
+/*START*/
+		["Richard","4","Suzanne"],
+		["Richard","4","Suzanne"],
+		["I Love You"],
+		["You Light Up","My Life"],
+		["You Mean So","Much To Me"],
+		["I Wouldn't Be","Without You"],
+		["You Make Life","So Much Fun"],
+		["You're So","Special"],
+		["My Lady","In Red"],
+		["Time Flies When","I'm With You"],
+		["I Don't Know","What I'd Do","Without You"],
+		["Never Want","This To End"],
+		["My Soul Mate"],
+		["You're","Everything","I Want"],
+		["You're So","Beautiful"],
+		["You're So","Smart"],
+		["Being With You","Makes Me Want","You More"],
+		["You're","Soooooo","Sexy"],
+		["Meeting You Was","The Best Thing","That Happened","To Me"],
+		["I Live For","Your Smile"],
+		["A Dream","Come True"]
+/*STOP*/
+	];
+	document.getElementById("title").appendChild(document.createTextNode(messages[0].join(" ")));
+	var stage, objArray=[], stageScale, ns="http://www.w3.org/2000/svg";
+	function start() {
+		stage = document.getElementById('canvas'); //.getContext('2d'); 
+		var background = createObj("rect",{"fill":"#000"});
+		stage.appendChild(background);
+		var clock = new Date().getTime();
+		for(var x=0;x<7;x++) objArray[x] = randomSpinner(clock);
+		var mainHeart = Heart();
+		mainHeart.update(messages[0],"#500");
+		window.onresize = function() {
+			stageScale=Math.min(window.innerWidth,window.innerHeight)/125;
+			setAttributes(background,{"width":window.innerWidth,"height":window.innerHeight});
+			mainHeart.g.setAttribute("transform","translate("+window.innerWidth/2+","+(window.innerHeight/2-15*stageScale)+") scale("+stageScale+","+stageScale+")");
+			setAttributes(document.getElementById("link"),{"x":window.innerWidth-2,"y":window.innerHeight-2});
+		}
+		window.onresize();
+		stage.appendChild(mainHeart.g);
+		setInterval(draw,50);
+	}
+
+	function draw() {
+		stageScale=Math.min(window.innerWidth,window.innerHeight)/125;
+		var clock = new Date().getTime();
+		function sort(m,n) { return m.position(clock) > n.position(clock) ? 1:-1; }
+		objArray.sort(sort);
+		for(var x=0;x<objArray.length;x++)
+			objArray[x].draw(clock);
+ 	}
+
+ 	function Heart() {
+		var g = createObj("g"), gText = createObj("g");
+		var heartShape = createObj("path",{"d":"M0 60A30 30 0 1 1 0 0A30 30 0 1 1 60 0L60 60z","transform":"translate(0,-30) scale(1,1.2) rotate(45)"});
+		g.appendChild(heartShape);
+		g.appendChild(gText);
+		for(var i=0 ; i < 4 ; i++) {
+			var text = createObj("text",{"x":0,"y":i*10});
+			text.appendChild(document.createTextNode(""));
+			gText.appendChild(text);
+		}
+		function update(message,colour) {
+			for(var i=0 ; i < gText.childNodes.length ; i++) 
+				gText.childNodes[i].firstChild.textContent = i < message.length ?  message[i] : "";
+			gText.setAttribute("transform","translate(0,"+(15-message.length/2*10)+")");
+			heartShape.setAttribute("fill",colour);
+		}
+		return { g:g, update:update }
+	}
+
+	function randomSpinner(clock) {
+		var x,y,cc,rotation,rotationVelocity,sizeVelocity=0,size,time,startTime,heart = Heart(); // Private Class Vars
+		function init(clock) {
+			startTime=clock;
+			x = Math.random() * window.innerWidth;
+			y = Math.random() * window.innerHeight;
+			rotation = Math.random() * 360;
+			rotationVelocity = (Math.random()-0.5) * 180;	
+			sizeVelocity = Math.random()*4 + 3;
+			cc = 2/sizeVelocity/sizeVelocity;
+			var red=Math.floor(Math.random()*128+128);
+			heart.update(messages[Math.floor(Math.random() * (messages.length-1))+1], "rgb("+red+","+
+				Math.floor(Math.random()*red/4)+","+Math.floor(Math.random()*red/3)+")");
+		}
+		init(clock);
+		function position(currentTime) {
+			time=(currentTime-startTime)/1000;
+			if(time>sizeVelocity) {
+				init(startTime+sizeVelocity*1000);
+				return position(currentTime);
+			}
+			return size = -time*(time-sizeVelocity)*cc*stageScale;
+		}
+		function draw() {
+			stage.appendChild(heart.g);
+			heart.g.setAttribute("transform","translate("+x+","+y+") rotate("+
+				(rotation+time*rotationVelocity)+") scale("+size+","+size+")");
+		}
+		return { draw:draw, position:position };
+	}
+	function createObj(objName,attributes) { return setAttributes(document.createElementNS(ns,objName),attributes); }
+	function setAttributes(obj,attributes) { for(var i in attributes) obj.setAttribute(i,attributes[i]); return obj; }
+// ]]></script>
+<a xlink:href="../hearts" target="_top"><text id="link" style="text-anchor: end" onmouseover="this.setAttribute('fill','#f00');" onmouseout="this.setAttribute('fill','#fff');">SVG Hearts</text></a>
+</svg>

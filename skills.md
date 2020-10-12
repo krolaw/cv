@@ -16,7 +16,7 @@ title: Skills
 
 |Arena|List|
 |---|---|
-|Languages|PHP, Lua, Rust, C, Java/Groovy, XSLT/XML|
+|Languages|PHP, Lua, Rust, C, Java/Groovy, XSLT|
 |Scripting|XML, XHTML, FOP
 |Platforms|ReactJS|
 |Storage|MySQL, PostgreSQL
@@ -25,70 +25,14 @@ title: Skills
 |DNS Servers|BIND, NSD|
 |File Servers|Samba, Netatalk/AFP|
 
-# Past Solutions
-
-## DHCP4
-https://github.com/krolaw/dhcp4 *Go*  
-Open source DHCP IPv4 library.  I needed a Go native DHCP library for NuiNet/TrafficMate Pro, but there wasn't one available at the time.  The library was open sourced to benefit from community feedback. It was used by FaceBook in all of their datacentres for a time.
-
-## Basic Facts
-![Basic Facts Screenshot](images/basicfacts.png)  
-![Basic Facts Screenshot](images/basicfactscert.png)
-
-**Original:** *HTML/DOM, Javascript*  
-**Cloud:** *Go, AppEngine, CloudStorage*  
-Developed for New Zealand schools to match NZ maths standard tests.
-
-## TriXOR
-![TriXOR Screenshots](images/trixor.png)
-
-*Android Java, XML, SQLite3* 
-Free Android puzzle game, similar to Set.  Downloadable from Google Android Market.
-
-## XSLT Charts
-*XML/XSLT, SVG*
-
-- [Icecream Example](images/icecream.svg)
-- [Sunspots Example](images/sunspots.svg)
-  
-XML to Pie/Bar/Line chart converter.
-
-## Free Subliminal Text
-http://github.com/krolaw/fst *Java*  
-![Free Subliminal Text Example](https://raw.githubusercontent.com/krolaw/fst/master/screenshot1.png)  
-Multiplatform programme that flashes subliminal messages on screen. Created when my wife's subliminal software failed, and later turned into something releasable.
-
-## Hearts
-![Hearts Example](../hearts/hearts.svg) *PHP, HTML, JavaScript, SVG*  
-Hearts started with an interest in SVG and the imminent arrival of Valentine's day.  My wife blogged about it, which resulted in requests from SVG proponents to create a configurable version for general use.  A Canvas option was later added to support Android and iPhone devices.
-
-## SipCloak
-![SipCloak Logo](http://www.sipcloak.org/logo.png) *Go*  
-Free, no registration, DNS controlled, SIP Redirection service. Sadly, no longer used as redirection isn't the best way to mask a SIP address.
-
-# [Nui Software](https://nui.global) 
-
-## MenuMate Enabler
-*Groovy/ScriptMaster*   
-Communications interface between Property Management product and 3rd Party Restaurant Software.
-
-## PDF Addon
-*Apache FOP, XSLT/XML*   
-Provides PDF Statement generation for Property Management product.
-
-## PBX Listener
-*Groovy/ScriptMaster*  
-IP PBX Systems interface plugin for Property Management product.
 
 
-## Simple Charts
-![Chart Screenshots](images/simpleCharts.png)
 
-*Java, Javascript, HTML*
-URI to Pie/Bar/Line chart converter. Was used in all major Skagerrak products before alternatives arrived.
 
-## WebVault
-**Original:** *Groovy/ScriptMaster, PHP, Apache*  
-**Cloud:** *Groovy/ScriptMaster, Go, CloudStorage*  
-Addon offsite backup system for MotelMate product.
+
+
+
+
+
+
 

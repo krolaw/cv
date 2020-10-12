@@ -2,7 +2,7 @@
 title: Work History
 ---
 
-# _Chief Technical Officer / Architect / Developer_
+# _CTO / Architect / Developer_
 # 2019 - Present : [Extraorder Limited](https://extraorder.app)
 
 ## Restaurant Ordering App
@@ -10,20 +10,20 @@ title: Work History
 - [Google Play Link](https://play.google.com/store/apps/details?id=app.extraorder.extraorder_app)
 - [AppStore Link](https://apps.apple.com/nz/app/extraorder/id1482743097)
 
-Customer iOS, Android and Web App all leveraged the same Flutter codebase. The Vendor admin web frontend utilised [AngularDart](https://angulardart.dev/) so a significant portion of the Flutter source could be reused. The backend was written in Go, hosted on Google's AppEngine Standard platform with Datastore (config/menus) and CloudStorage (images). Stripe for payments, Mailgun for emails and custom code to integrate with various POS systems. I also setup the dns hosting, mail forwarding, SIP phones etc. I was instrumental in creating the logo with some direction from the CEO. 
+Customer iOS, Android and Web App all leveraged the same [Flutter](https://flutter.dev/) codebase. The vendor admin web frontend utilised [AngularDart](https://angulardart.dev/) allowing a significant portion of the Flutter source to be reused. The backend was written in [Go](https://golang.org/), hosted on Google's [AppEngine](https://cloud.google.com/appengine) Standard platform with Datastore (config/menus) and CloudStorage (images). [Stripe](https://stripe.com/) for payments, [Mailgun](https://www.mailgun.com/) for emails and custom code to integrate with various POS systems. I also setup the dns hosting, mail forwarding, SIP phones etc. I was instrumental in creating the logo with some direction from the CEO. 
 
 ## Website
 
 - [Original Site](https://krolaw.github.io/eowebsite/)
 
-The initial Extraorder website used [Hugo](https://gohugo.io/), with the [Meghna theme](https://themes.gohugo.io/meghna-hugo/), hosted on Github. Alas, I couldn't do it all, so it was replaced by [WordPress](https://wordpress.com/) so a real designer could manage the website. My initial efforts can still be viewed (without the Extraorder domain).
+The initial Extraorder website used [Hugo](https://gohugo.io/), with the [Meghna theme](https://themes.gohugo.io/meghna-hugo/), hosted on [Github Pages](https://pages.github.com/). Alas, to keep dev workload sane, it was replaced by [WordPress](https://wordpress.com/) so a designer could manage the website.
 
 # _Senior Developer / Dev Mentor / Software Architect_
 # 2007 - 2019 : Skagerrak Software Limited trading as [Nui Software](https://nui.global)
 
-## Server Administrator
+## General I.T.
 
-When I first started, all servers were in-house. During my time I moved most services onto to separate low cost linux VPSes; and later where practical onto cloud systems. I configured everything: Desktops (MacOS, Windows, Linux), Mail systems (Dovecot, SendMail, Postfix), Web Hosting (Apache, Nginx, MySQL, SQLite, PHP), SSL certificates, backup systems, VOIP phones/software (incl dialplans), routers, access points, printers, etc.
+When I started, all services were in-house running off a single server. During my time I moved most services onto to separate low cost linux VPSes; and later where practical onto cloud systems. I setup and configured everything from Desktops (MacOS, Windows, Linux), Mail systems (Dovecot, SendMail, Postfix), Web Hosting (Apache, Nginx, MySQL, SQLite, PHP), SSL certificates, backup systems (rsync), VOIP phones/software (incl dialplans), routers, access points, printers, etc.
 
 ## eSchool Signup
 
@@ -76,23 +76,51 @@ I wrote the controlling application in [Lua](https://www.lua.org/) including a b
 IPTables was used for allocating access and data accounting.
 STUNNEL was used to wrap the app with ssl, so that users could log in securely.
 
-After 4 years, while I was proud with what could be done with the limited hardware, it was still limited, prompting me to look at other hardware options. 
+After 3 years, while I was proud with what could be done with the limited hardware, it was still limited, prompting me to look at other hardware options. 
 
-## Rocket Grid
+## Rocket Drag and Drop Grid 
 ![Grid Screenshot](images/rocketGrid.png)  
 
-*Javascript, AJAX, HTML DOM, SVG*  
-Interactive, infinite auto-scrolling, high speed grid replacement embedded into flagship MotelMate product.
+The Rocket Grid provided an editable view of bookings for a motel/hotel/park from within a web portal within the MotelMate desktop application. It used a red jogger for pixel perfect infinite scrolling. It was written in pure javascript, leveraging SVG to begin with and then the HTML DOM for increased compatibility.
+
+The biggest complaints about previous grids was the waiting for them to load. With Rocket, the number of AJAX calls and the amount of data required for the initial load were significantly reduced. I wrote a background lookahead cache based on the direction of scrolling and several other optimisations to ensure it ran as smoothly as possible.
+
+Years later, when MotelMate was being redeveloped for the cloud, I started reworking the code for an even faster, cleaner, better looking experience. Alas, I left Nui before it could be realised.
+
 
 ## Stats
 Each month, motels were required to submit stats to the [Ministry of Statistics](https://www.stats.govt.nz/). This was usually a paper form. MotelMate would generate all the stats that the Motelier could then copy on to form. Early on, I wrote a PHP page (backed with MySQL), to receive the results and bundle them as a single CSV file, emailed monthly to a contact at the Ministry.
 
-When the Ministry started development on their own API they reached out. I provided feedback on initial design and developed the first client (in Go on AppEngine), allowing them to compare results with our CSV and realtime API. (I modified the PHP to also proxy the request to the Go client.) In the end we transitioned to just using the Go client.
+When the Ministry started development on their own API, they reached out. I provided feedback on initial design and developed the first client (in Go on AppEngine), allowing them to compare results with our CSV and realtime API. (I modified the PHP to also proxy the request to the Go client.) In the end we transitioned to just using the Go client.
 
 ## NSN/ELI Interface
 In 2013 the [Ministry of Education](https://www.education.govt.nz/) (MOE) introduced a systems interface for obtaining National Student Numbers (NSI) and sending booking and attendance of children in Early Learning (ELI). It became a requirement that childcare/kindergarten services use software that supports NSI and ELI.
 
 Due to its authentication and logging requirements, Nui's FileMaker based solution [FirstBase](https://nui.global/firstbase/) was not able to comply by itself. So, I designed and installed a Go server intermediary onto a VPS (NZ based as required by the MOE at the time) to fill the gaps.
+
+## Simple Charts
+![Chart Screenshots](images/simpleCharts.png)
+
+*Java, Javascript, HTML*
+URI to Pie/Bar/Line chart converter. Was used in all major Skagerrak products before alternatives arrived.
+
+
+## Other developments 
+
+- USB Cash Drawer Opener (Windows)
+- Asterisk PBX Call Monitor (Windows/Mac)
+- General IP PBX Monitor (Groovy)
+- MenuMate POS Integration (Groovy)
+- Xero OAuth web proxy
+- Offsite backup system for MotelMate product (Groovy, Go)
+- PDF export (XSLT, Java, Apache FOP)
+
+
+## Publications
+
+- 2015 - Tourism Business Magazine - [Loyalty schemes: What you need to know](publications/4-5_TB_Autumn15.pdf)
+
+I was often used for proof reading in the office and assisted writing many articles promoting Nui's products.
 
 # _I.T. School Technician / Server Admin / Developer / Trainer_
 # 2001 - 2010 : [Prototec Ltd](https://www.prototec.co.nz)
@@ -104,12 +132,24 @@ I setup Linux servers with web hosting (Apache/PHP), mail (SendMail/Dovecot/Squi
 I wrote custom web technologies for school use, including but not limited to:
 School notice board, Room bookings, I.T. Issue Tracker, Drag and Drop WYSIWYG web editor and Maths Tester (See Prototec Learning).
 
-![WebEdit Screenshot](images/webedit.png)
-![Booking Screenshot](images/booking.png)
-![Daysheet Screenshot](images/daysheet.png)  
-
+![WebEdit Screenshot](images/webedit.png) ![Booking Screenshot](images/booking.png) ![Daysheet Screenshot](images/daysheet.png)  
 
 I also advised on technology purchases, trained staff, made presentations, etc.
+
+## Prototec Learning
+
+https://learning.prototec.co.nz/
+
+Developed for New Zealand schools to match NZ maths curriculum. Originally, I would charge a licence fee and allow schools to host it on their websites for students to practise at home.
+
+Unfortunately I found that non-paying schools were linking to the paying schools' sites. So, I decided to host myself and make the whole thing free. Some minor advertising pays for its hosting and upkeep. Currently used by many schools around NZ.
+
+![Basic Facts Screenshot](images/basicfacts.png)  
+![Basic Facts Screenshot](images/basicfactscert.png)
+
+**Original:** *HTML/DOM, Javascript*  
+**Cloud:** *Go, AppEngine, DataStore*  
+
 
 # _Teaching Assistant, Lab Tutor, Web (CGI) Developer_
 # 1998 - 2001 : [University of Auckland Engineering Department](https://www.auckland.ac.nz/en/engineering/about-the-faculty/engineering-science.html)
@@ -135,3 +175,32 @@ I was given a book on HTML 2.0 and asked to build a website. The user base was p
 # 1995 - 1997 Mac, 1993 - 1995 Amiga
 
 During High School, I had an Commodore Amiga 500. I learnt various software packages and tutored them (I also wrote programmes in [Amiga Basic](https://en.wikipedia.org/wiki/AmigaBASIC) and [Lattice C](https://en.wikipedia.org/wiki/Lattice_C)). Later when I upgraded to an Apple Mac LC475, I switched over to tutoring that.
+
+# Other
+
+## TriXOR (2012)
+
+- [Google Play](https://play.google.com/store/apps/details?id=prototec.TriXORFull&hl=en_US)
+
+![TriXOR Screenshots](images/trixor.png)
+
+*Android Java, XML, SQLite3* 
+Free Android puzzle game, similar to Set.  Downloadable from Google Android Market.
+
+## XSLT Charts (2013)
+*XML/XSLT, SVG*
+
+- [Icecream Example](images/icecream.svg)
+- [Sunspots Example](images/sunspots.svg)
+  
+XML to Pie/Bar/Line chart converter. Unfortunately, at some stage browsers stopped supporting the embedding of images into HMTL that were created using XSLT. Oddly they can still be viewed directly (links above).
+
+## Free Subliminal Text (2011)
+http://github.com/krolaw/fst *Java*  
+![Free Subliminal Text Example](https://raw.githubusercontent.com/krolaw/fst/master/screenshot1.png)  
+Multiplatform programme that flashes subliminal messages on screen. Created when my wife's subliminal software failed, and later turned into something releasable.
+
+## Hearts (2005)
+![Hearts Example](images/hearts.svg) 
+*PHP, HTML, JavaScript, SVG*  
+Hearts started with an interest in SVG and the imminent arrival of Valentine's day.  My wife blogged about it, which resulted in requests from SVG proponents to create a configurable version for general use.  A Canvas option was later added to support Android and iPhone devices.
