@@ -16,7 +16,7 @@ title: Skills
 
 |Arena|List|
 |---|---|
-|Languages|PHP, Lua, Rust, Javascript, C, Java/Groovy, XSLT/XML|
+|Languages|PHP, Lua, Rust, C, Java/Groovy, XSLT/XML|
 |Scripting|XML, XHTML, FOP
 |Platforms|ReactJS|
 |Storage|MySQL, PostgreSQL
@@ -33,18 +33,22 @@ Open source DHCP IPv4 library.  I needed a Go native DHCP library for NuiNet/Tra
 
 ## Basic Facts
 ![Basic Facts Screenshot](images/basicfacts.png)  
-![Basic Facts Screenshot](images/basicfactscert.png) 
+![Basic Facts Screenshot](images/basicfactscert.png)
+
 **Original:** *HTML/DOM, Javascript*  
 **Cloud:** *Go, AppEngine, CloudStorage*  
 Developed for New Zealand schools to match NZ maths standard tests.
 
 ## TriXOR
-![TriXOR Screenshots](images/trixor.png) *Android Java, XML, SQLite3*  
+![TriXOR Screenshots](images/trixor.png)
+
+*Android Java, XML, SQLite3* 
 Free Android puzzle game, similar to Set.  Downloadable from Google Android Market.
 
 ## XSLT Charts
-![Charts Screenshot](../charts/gallery/icecream.svg)
-![Charts Screenshot](../charts/gallery/sunspots.svg)  
+![Charts Screenshot](images/icecream.svg)
+![Charts Screenshot](images/sunspots.svg)  
+
 https://github.com/krolaw/charts *XML/XSLT, SVG*  
 XML to Pie/Bar/Line chart converter.
 
@@ -66,23 +70,6 @@ Free, no registration, DNS controlled, SIP Redirection service. Sadly, no longer
 # [Nui Software](https://nui.global) 
 
 
-
-## NuiNet/TrafficMate
-![TrafficMate Pro Screenshot](images/trafficMatePro.png)  
-**TrafficMate:** *OpenWRT, Lua, HTML, CSS*  
-**NuiNet:** *Debian, Go, HTML, CSS*
-
-Standalone, Internet access guest control device for preventing abuse and generating revenue.  Guests can be provided an account with Tariffs or use prepay owner-defined vouchers.  Interfaces with Property Management System.
-
-With the codebase (and developer) of previous versions scrapped, version 4 was an opportunity to get the foundations right and deliver a quality product to our customers. 
-
-Two years on, the hardware was limiting development, so I took the opportunity to re-invent TrafficMate.
-
-## International School Applications
-![Screenshot](images/eSchoolSignup.png)
-*Go, Go Templates, AppEngine, DataStore, CloudStorage*
-Highly customisable International Student signup and Agent Review system.
-
 ## MenuMate Enabler
 *Groovy/ScriptMaster*   
 Communications interface between Property Management product and 3rd Party Restaurant Software.
@@ -98,18 +85,9 @@ IP PBX Systems interface plugin for Property Management product.
 
 ## Simple Charts
 ![Chart Screenshots](images/simpleCharts.png)
+
 *Java, Javascript, HTML*
 URI to Pie/Bar/Line chart converter. Was used in all major Skagerrak products before alternatives arrived.
-
-## Rocket Grid
-![Grid Screenshot](images/rocketGrid.png)  
-*Javascript, AJAX, HTML DOM, SVG*  
-Interactive, infinite auto-scrolling, high speed grid replacement embedded into flagship MotelMate product.
-
-## WebSync
-**Original:** *Java, MySQL, PHP, XML/XSD/XSLT, Apache*  
-**Cloud:** *Go, AppEngine, DataStore, CloudStorage*
-Server providing a standardised interface to 3rd party Property/hotel booking channels (like Expedia, etc) for MotelMate product.
 
 ## WebVault
 **Original:** *Groovy/ScriptMaster, PHP, Apache*  
