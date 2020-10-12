@@ -1,3 +1,7 @@
+---
+title: Education
+---
+
 # University of Auckland - Qualifications & Papers
 
 ## Master of Computer Science - Honours 1st Class
@@ -67,8 +71,8 @@
 |Physics|A 69%| 
 |Chemistry|A 67%| 
 |English|C 46%| 
-*Extra Curricular:* Prefect, Future Problem Solving, Maths Tutor, Dragon Boating, [Reference](references#lbc)
 
+*Extra Curricular:* Prefect, Future Problem Solving, Maths Tutor, Dragon Boating, [Reference](references#lbc)
 
 ## 1994 - Sixth Form Certificate
 
@@ -80,7 +84,8 @@
 |Physics|2| 
 |Chemistry|3| 
 |Accounting|4| 
-*Extra Curricular:* Young Enterprises Scheme, Debating| 
+
+*Extra Curricular:* Young Enterprises Scheme, Debating
 
 ## 1993 - School Certificate
 
@@ -92,4 +97,5 @@
 |Technical Drawing|A 82%| 
 |French|B 71%| 
 |Accounting|B 68%| 
+
 *Extra Curricular:* Debating, Advanced Reading Skills

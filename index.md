@@ -1,3 +1,7 @@
+---
+title: Home
+---
+
 # Personal
 - Born 1977-05-22
 - NZ and UK Citizen

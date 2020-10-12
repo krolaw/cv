@@ -1,3 +1,7 @@
+---
+title: Skills
+---
+
 # Current Technologies
 
 |Arena|List|
@@ -37,7 +41,6 @@ Developed for New Zealand schools to match NZ maths standard tests.
 ## TriXOR
 ![TriXOR Screenshots](images/trixor.png) *Android Java, XML, SQLite3*  
 Free Android puzzle game, similar to Set.  Downloadable from Google Android Market.
-<table>
 
 ## XSLT Charts
 ![Charts Screenshot](../charts/gallery/icecream.svg)
