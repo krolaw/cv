@@ -10,7 +10,7 @@ title: Work History
 - [Google Play Link](https://play.google.com/store/apps/details?id=app.extraorder.extraorder_app)
 - [AppStore Link](https://apps.apple.com/nz/app/extraorder/id1482743097)
 
-Customer iOS, Android and Web App all leveraged the same [Flutter](https://flutter.dev/) codebase. The vendor admin web frontend utilised [AngularDart](https://angulardart.dev/) allowing a significant portion of the Flutter source to be reused. The backend was written in [Go](https://golang.org/), hosted on Google's [AppEngine](https://cloud.google.com/appengine) Standard platform with Datastore (config/menus) and CloudStorage (images). [Stripe](https://stripe.com/) for payments, [Mailgun](https://www.mailgun.com/) for emails and custom code to integrate with various POS systems. I also setup the dns hosting, mail forwarding, SIP phones etc. I was instrumental in creating the logo with some direction from the CEO. 
+Customer iOS, Android and Web App all leveraged the same [Flutter](https://flutter.dev/) codebase. The vendor admin web frontend utilised [AngularDart](https://angulardart.dev/) allowing a significant portion of the Flutter source to be reused. The backend was written in [Go](https://golang.org/), hosted on Google's [AppEngine](https://cloud.google.com/appengine) Standard platform with Datastore (config/menus) and CloudStorage (images). [Stripe](https://stripe.com/) for payments, [Mailgun](https://www.mailgun.com/) for emails and custom code to integrate with various POS systems. I also setup dns hosting, mail forwarding, SIP phones etc. I was instrumental in creating the logo with some direction from the CEO. 
 
 ## Website
 
@@ -29,7 +29,7 @@ When I started, all services were in-house running off a single server. During m
 
 ![Screenshot](images/eSchoolSignup.png)
 
-ESchool Signup is an online extension of Nui's International Student Management application [eSchool](https://www.eschool.co.nz/). It allows international students (or their agents) to apply to study in New Zealand. Applications are later downloaded by each school's eSchool app. 
+ESchool Signup is an online extension of Nui's International Student Management application [eSchool](https://www.eschool.co.nz/). It allows international students (or their agents) to apply to study in New Zealand. Submissions are later downloaded by each school's eSchool application. 
 
 Each school has its own set of custom Go templates and config, uploaded from eSchool. As requirements changed, Signup's code stayed mostly static. Most changes and feature improvements were handled by updating the template and config upload. This allowed different schools their different requirements and their web designers to skin it if desired. This flexibility was intentional to keep development workloads under control and helped sell the product.
 
@@ -39,7 +39,7 @@ Signup started life as a Go App on a VPS backed by Sqlite and fronted by Nginx. 
 
 WebSync connected Nui's customers' [MotelMate](https://nui.global/motelmate/), a FileMaker based Motel/Hotel Management desktop application, to online booking systems. It provided a consistent interface for MotelMate while translating for the many OTA's it connected to. 
 
-Initially I wrote it as a Proof of Concept in Java and XSLT, running on an OSX server, with MySQL for storage. After a few years in production, I suggested rewriting and moving to cloud, avoiding downtime and load issues. I rewrote it Go and installed it on Google's AppEngine, utilising DataStore and CloudStorage. This meant we no longer needed to shutdown for OS upgrades or bother users when our Internet or SSD failed (rare but catastrophic for a critical service). Also, JSON was becoming more desirable than XML for communications, and XSLT was a unnecessarily cumbersome when dealing with complicated data transformations. Go made the whole process easier.
+Initially I wrote it as a Proof of Concept in Java and XSLT, running on an OSX server, with MySQL for storage. After a few years in production, I suggested rewriting and moving to cloud, avoiding downtime and load issues. I rewrote it in Go and installed it on Google's AppEngine, utilising DataStore and CloudStorage. This meant we no longer needed to shutdown for OS upgrades or bother users when our Internet or SSD failed (rare but catastrophic for a critical service). Also, JSON was becoming more desirable than XML for communications, and XSLT was unnecessarily cumbersome when dealing with complicated data transformations. Go made the whole process easier.
 
 I also wrote a FileMaker XML export library, making it easier for MotelMate to download bookings.
 
@@ -47,15 +47,15 @@ I also wrote a FileMaker XML export library, making it easier for MotelMate to d
 
 ![TrafficMate Pro Screenshot](images/trafficMatePro.png)
 
-NuiNet is a internet management solution I developed for the hospitality industry. It supported vouchers, and tariffs with auto renewing data, along with Paypal integration so guests could topup without staff intervention. I also wrote its [manual](https://nui.global/net/docs/configuration/).
+NuiNet is an internet management solution I developed for the hospitality industry. It supported vouchers, and tariffs with auto renewing data, along with Paypal integration so guests could topup without staff intervention. I also wrote its [manual](https://nui.global/net/docs/configuration/).
 
-It optionally integrated with Nui's MotelMate Property Management Software, allowing internet access to be seamlessly added at guest check-in.
+It optionally integrates with Nui's MotelMate Property Management Software, allowing internet access to be seamlessly added at guest check-in. It checks in daily with a VPS for updates and allows vendors to apply them. Downtime is kept to a minimum as the system continues running while downloading and applying the updates - then it closes its listening sockets, starts the replacement process, and exits.
 
 I used [Voyager Linux](http://linux.voyage.hk/) on [PC Engines](https://www.pcengines.ch/) [APU2](https://www.pcengines.ch/apu2.htm) hardware (and [APU1](https://www.pcengines.ch/apu.htm) before it). The controlling application was written in [Go](https://golang.org), an all-in-one DHCP, DNS, Web server with account tracking. I added integration with Paypal using custom encrypted web buttons, not easy as PayPal only supported Java.
 
 During development, I found that the IPTables netcounters were unreliable as they were not written for concurrency. I opted to use IPTable's ULOG (and later NFLOG) to send my Go app user traffic packet headers, which allowed effective monitoring.
 
-Because we wanted control over DHCP allocation, I wrote a packet level [DHCP4 Go Library](https://github.com/krolaw/dhcp4). Nui kindy granted permission to open source the library, and I understand it was used by many other companies. At one point, it was used as part of [FaceBook's DHCP load balancing relay](https://github.com/facebookincubator/dhcplb/tree/7f3b3859478a4f19a15984d97c96fceaa89e982b) and installed in every one of their datacentres. It may have also been used at Google as I received patches from two Google employees.
+Because we wanted control over DHCP allocation, I wrote a packet level [DHCP4 Go Library](https://github.com/krolaw/dhcp4). Nui kindy granted permission to open source the library, and I understand it was used by many other companies. At one point, it was used as part of [FaceBook's DHCP load balancing relay](https://github.com/facebookincubator/dhcplb/tree/7f3b3859478a4f19a15984d97c96fceaa89e982b) and installed in every one of their data centres. It may have also been used at Google as I received patches from two Google employees.
 
 By combining a [DNS library](https://github.com/miekg/dns) with the monitored connections, I was able to allow users to see exactly how their data was used. Due to privacy concerns, each device could only view its own logs (even if multiple devices shared the same account), and it was inaccessible to staff.
 
@@ -67,8 +67,6 @@ As such, I developed various antipiracy technologies that significantly thwarted
 In order to simplify setup, we ordered the hardware preassembled and had it shipped directly to the company that would laser etch our logo.
 I customised a [Clonezilla](https://clonezilla.org/) USB drive, to load the onboard ssd on startup. This meant we could setup units without disassembly, or having to connect a keyboard or serial cable.
 
-NuiNet would check in daily with a VPS for updates and allow vendors to apply them. Downtime was kept to a minimum as the system would continue running while downloading and applying the updates - then it would then close its listening sockets, startup the replacement process and exit.
-
 TrafficMate was the forerunner to NuiNet using [OpenWRT](https://openwrt.org/) on a [Linksys WRT54GL router](https://en.wikipedia.org/wiki/Linksys_WRT54G_series).
 It didn't have much ram or storage, but I was still able to implement and retrofit much of the antipiracy technology into it.
 
@@ -76,7 +74,7 @@ I wrote the controlling application in [Lua](https://www.lua.org/) including a b
 IPTables was used for allocating access and data accounting.
 STUNNEL was used to wrap the app with ssl, so that users could log in securely.
 
-After 3 years, while I was proud with what could be done with the limited hardware, it was still limited, prompting me to look at other hardware options. 
+After 3 years, while I was proud of what could be done with the limited hardware, it was still limited, prompting me to look at other hardware options. 
 
 ## Rocket Drag and Drop Grid 
 ![Grid Screenshot](images/rocketGrid.png)  
@@ -154,10 +152,10 @@ Unfortunately I found that non-paying schools were linking to the paying schools
 # _Teaching Assistant, Lab Tutor, Web (CGI) Developer_
 # 1998 - 2001 : [University of Auckland Engineering Department](https://www.auckland.ac.nz/en/engineering/about-the-faculty/engineering-science.html)
 
-I ran some of the labs for first year students, 
+I ran some of the labs for first year students, marked assignments and made the odd appearance in lectures. I also developed an online submission system, a code comparison tool for detecting suspicious assignment similarities and a configurable web based survey tool.
 
 ## Quizy
-At the end of the each student lab, there was a survey form for students to fill out and the department wanted to make this an online electronic form. I developed a [CGI](https://en.wikipedia.org/wiki/Common_Gateway_Interface) application written in [C](https://en.wikipedia.org/wiki/C_(programming_language)), that read a text file with the desired questions (and additional information such as options for multichoice questions) and displayed it as a webpage for the students to fill out. It also saved the results into a file that could be used to collate results.
+At the end of each student lab, there was a survey form for students to fill out and the department wanted to make this an online electronic form. I developed a [CGI](https://en.wikipedia.org/wiki/Common_Gateway_Interface) application written in [C](https://en.wikipedia.org/wiki/C_(programming_language)), that read a text file with the desired questions (and additional information such as options for multichoice questions) and displayed it as a webpage for the students to fill out. It also saved the results into a file that could be used to collate results.
 
 ## ICACheat / Online Submission
 At the time in the Engineering department, programming assignments were assessed by reading over source code in printed form. There were concerns that some students were not completing the work on their own. I visited the Computer Science Department, who already had their own systems for detecting suspicious similarities, to see if we could use some of their techniques to do the same. 
@@ -174,7 +172,7 @@ I was given a book on HTML 2.0 and asked to build a website. The user base was p
 # _Computer Tutor_
 # 1995 - 1997 Mac, 1993 - 1995 Amiga
 
-During High School, I had an Commodore Amiga 500. I learnt various software packages and tutored them (I also wrote programmes in [Amiga Basic](https://en.wikipedia.org/wiki/AmigaBASIC) and [Lattice C](https://en.wikipedia.org/wiki/Lattice_C)). Later when I upgraded to an Apple Mac LC475, I switched over to tutoring that.
+During High School, I had a Commodore Amiga 500. I learnt various software packages and tutored them (I also wrote programmes in [Amiga Basic](https://en.wikipedia.org/wiki/AmigaBASIC) and [Lattice C](https://en.wikipedia.org/wiki/Lattice_C)). Later when I upgraded to an Apple Mac LC475, I switched over to tutoring that.
 
 # Other
 
@@ -194,7 +192,7 @@ Free Android puzzle game, similar to Set.  Downloadable from Google Android Mark
 - [Icecream Example](images/icecream.svg)
 - [Sunspots Example](images/sunspots.svg)
   
-XML to Pie/Bar/Line chart converter. Unfortunately, at some stage browsers stopped supporting the embedding of images into HMTL that were created using XSLT. Oddly they can still be viewed directly (links above).
+XML to Pie/Bar/Line chart converter. Unfortunately, at some stage browsers stopped supporting the embedding of images into HTML that were created using XSLT. Oddly they can still be viewed directly (links above).
 
 ## Free Subliminal Text (2011)
 [GitHub](http://github.com/krolaw/fst) *Java*  

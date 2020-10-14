@@ -72,7 +72,7 @@ title: Education
 |Chemistry|A 67%| 
 |English|C 46%| 
 
-*Extra Curricular:* Prefect, Future Problem Solving, Maths Tutor, Dragon Boating, [Reference](references#lbc)
+*Extra Curricular:* Prefect, Future Problem Solving, Maths Tutor, Dragon Boating
 
 ## 1994 - Sixth Form Certificate
 
